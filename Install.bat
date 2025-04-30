@@ -28,7 +28,7 @@ cd "%TEMP%" & rd /s /q "%TEMP%\Delphi2007"
 title Configuring - Delphi 2007
 rename "%SystemDrive%\Program Files (x86)\Borland\Delphi7" "Delphi 7"
 move "%SystemDrive%\Program Files (x86)\Common Files\Borland Shared" "%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /Y
-compact /C /S:"%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /I /Q
+compact /C /S:"%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /I /Q >nul
 
 title Extending - Delphi 2007
 md "%SystemDrive%\Program Files (x86)\Borland\Delphi 7\Addons"
