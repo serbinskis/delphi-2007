@@ -58,6 +58,7 @@ del "%dest%\Borland.reg"
 del "%dest%\Classes.reg"
 
 title Updating Path - Delphi 2007
+powershell -Command "$envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); $newPath = ($envPath -split ';' | Where-Object { $_ -notmatch 'Borland\\Delphi7' }) -join ';'; [Environment]::SetEnvironmentVariable('Path', $newPath, 'Machine')"
 set "dest=%SystemDrive%\Program Files (x86)\Borland\Delphi 7\bin"
 powershell -Command "$path = '%dest%'; $envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); if ($envPath -notlike '*'+$path+'*') { [Environment]::SetEnvironmentVariable('Path', $envPath+';'+$path, 'Machine') }"
 set "dest=%SystemDrive%\Program Files (x86)\Borland\Delphi 7\Projects\Bpl\"
