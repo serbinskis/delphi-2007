@@ -27,7 +27,7 @@ cd "%TEMP%" & rd /s /q "%TEMP%\Delphi2007"
 
 title Configuring - Delphi 2007
 rename "%SystemDrive%\Program Files (x86)\Borland\Delphi7" "Delphi 7"
-move "%SystemDrive%\Program Files (x86)\Common Files\Borland Shared" "%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /Y
+move /Y "%SystemDrive%\Program Files (x86)\Common Files\Borland Shared" "%SystemDrive%\Program Files (x86)\Borland\Delphi 7" >nul
 compact /C /S:"%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /I /Q >nul
 
 title Extending - Delphi 2007
@@ -50,12 +50,12 @@ cd "%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Borland Delp
 powershell -Command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Delphi7*') { $shortcut.TargetPath = $targetPath -replace 'Delphi7', 'Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Delphi7*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Delphi7', 'Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null"
 
 title Registerying - Delphi 2007
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Borland.reg' -OutFile '%dest%\Borland.reg'"
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Classes.reg' -OutFile '%dest%\Classes.reg'"
-reg import "%dest%\Borland.reg"
-reg import "%dest%\Classes.reg"
-del "%dest%\Borland.reg"
-del "%dest%\Classes.reg"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Borland.reg' -OutFile '%temp%\Borland.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Classes.reg' -OutFile '%temp%\Classes.reg'"
+reg import "%temp%\Borland.reg"
+reg import "%temp%\Classes.reg"
+del "%temp%\Borland.reg"
+del "%temp%\Classes.reg"
 
 title Updating Path - Delphi 2007
 powershell -Command "$envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); $newPath = ($envPath -split ';' | Where-Object { $_ -notmatch 'Borland\\Delphi7' }) -join ';'; [Environment]::SetEnvironmentVariable('Path', $newPath, 'Machine')"
