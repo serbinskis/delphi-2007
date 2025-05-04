@@ -1,0 +1,236 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup]
+@="Borland Project Group"
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe, 4"
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\Shell]
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\BorlandProjectGroup\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{30E13C46-122F-465C-BC02-BE361089CEF8}]
+@=""
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{30E13C46-122F-465C-BC02-BE361089CEF8}\InprocServer32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\Debugger\\BORdbk70.dll"
+"InprocServer32"=hex(7):44,00,51,00,4c,00,63,00,4c,00,21,00,78,00,39,00,47,00,\
+  3d,00,54,00,79,00,36,00,3f,00,75,00,66,00,2a,00,26,00,2e,00,42,00,44,00,65,\
+  00,62,00,75,00,67,00,67,00,65,00,72,00,3e,00,54,00,42,00,53,00,36,00,45,00,\
+  50,00,4a,00,77,00,61,00,3f,00,57,00,26,00,38,00,21,00,31,00,7d,00,7b,00,66,\
+  00,68,00,37,00,00,00,00,00
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{30E13C46-122F-465C-BC02-BE361089CEF8}\ProgID]
+@="Borland.DbkAux.1"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{30E13C46-122F-465C-BC02-BE361089CEF8}\VersionIndependentProgID]
+@="Borland.DbkAux"
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{FB99D700-18B9-11D0-A4CF-00A024C91936}]
+@="Borland Database Engine, Query Edit Object"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{FB99D700-18B9-11D0-A4CF-00A024C91936}\InprocServer32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\BDE\\idsql32.dll"
+"InprocServer32"=hex(7):44,00,51,00,4c,00,63,00,4c,00,21,00,78,00,39,00,47,00,\
+  3d,00,54,00,79,00,36,00,3f,00,75,00,66,00,2a,00,26,00,2e,00,42,00,42,00,44,\
+  00,45,00,3e,00,57,00,4e,00,40,00,24,00,74,00,33,00,78,00,7d,00,66,00,28,00,\
+  29,00,5b,00,3d,00,65,00,66,00,54,00,63,00,71,00,46,00,26,00,00,00,00,00
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{FB99D710-18B9-11D0-A4CF-00A024C91936}]
+@="Borland Database Engine"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{FB99D710-18B9-11D0-A4CF-00A024C91936}\InprocServer32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\BDE\\idapi32.dll"
+"InprocServer32"=hex(7):44,00,51,00,4c,00,63,00,4c,00,21,00,78,00,39,00,47,00,\
+  3d,00,54,00,79,00,36,00,3f,00,75,00,66,00,2a,00,26,00,2e,00,42,00,42,00,44,\
+  00,45,00,3e,00,4c,00,4e,00,40,00,24,00,74,00,33,00,78,00,7d,00,66,00,28,00,\
+  29,00,5b,00,3d,00,65,00,66,00,54,00,63,00,71,00,46,00,26,00,00,00,00,00
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}]
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0]
+@="BdeMTSDispenser Library"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\0]
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\0\win32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\BDE\\disp.dll"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\FLAGS]
+@="0"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\HELPDIR]
+@=""
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}]
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0]
+@="WebLib Library"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\0]
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\0\win32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\WebLib.tlb"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\FLAGS]
+@="0"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\HELPDIR]
+@=""
+﻿[HKEY_CLASSES_ROOT\DelphiCLXForm]
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe, 2"
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell]
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\DelphiForm]
+@="Delphi Form"
+
+[HKEY_CLASSES_ROOT\DelphiForm\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe, 2"
+
+[HKEY_CLASSES_ROOT\DelphiForm\Shell]
+
+[HKEY_CLASSES_ROOT\DelphiForm\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\DelphiForm\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\DelphiForm\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\DelphiForm\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\DelphiPackage]
+@="Delphi Package"
+
+[HKEY_CLASSES_ROOT\DelphiPackage\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe,3"
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell]
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\DelphiProject]
+@="Delphi Project"
+
+[HKEY_CLASSES_ROOT\DelphiProject\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe, 4"
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell]
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\DelphiUnit]
+@="Delphi Source File"
+
+[HKEY_CLASSES_ROOT\DelphiUnit\DefaultIcon]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe,5"
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell]
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open]
+@="&Open"
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open\Command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe /np"
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open\ddeexec\Application]
+@="DELPHI32"
+﻿[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}]
+
+[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0]
+@="BdeMTSDispenser Library"
+
+[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\0]
+
+[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\0\win32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\BDE\\disp.dll"
+
+[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\FLAGS]
+@="0"
+
+[HKEY_CLASSES_ROOT\TypeLib\{C20F7C3D-8919-11D1-AA74-00C04FA30E92}\1.0\HELPDIR]
+@=""
+﻿[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}]
+
+[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0]
+@="WebLib Library"
+
+[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\0]
+
+[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\0\win32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\WebLib.tlb"
+
+[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\FLAGS]
+@="0"
+
+[HKEY_CLASSES_ROOT\TypeLib\{E72A0841-8C34-11D3-AAF7-A0AC2E78CD57}\1.0\HELPDIR]
+@=""
+﻿[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{27082745-9949-4839-A8E3-A93E1A38FECC}]
+@=""
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{27082745-9949-4839-A8E3-A93E1A38FECC}\InprocServer32]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\Debugger\\BORdbk70.dll"
+"InprocServer32"=hex(7):44,00,51,00,4c,00,63,00,4c,00,21,00,78,00,39,00,47,00,\
+  3d,00,54,00,79,00,36,00,3f,00,75,00,66,00,2a,00,26,00,2e,00,42,00,44,00,65,\
+  00,62,00,75,00,67,00,67,00,65,00,72,00,3e,00,54,00,42,00,53,00,36,00,45,00,\
+  50,00,4a,00,77,00,61,00,3f,00,57,00,26,00,38,00,21,00,31,00,7d,00,7b,00,66,\
+  00,68,00,37,00,00,00,00,00
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{27082745-9949-4839-A8E3-A93E1A38FECC}\ProgID]
+@="Borland.Dbk.1"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{27082745-9949-4839-A8E3-A93E1A38FECC}\VersionIndependentProgID]
+@="Borland.Dbk"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags]
+"{f9b4ca41-9fc6-427d-9c58-f8fd425bf9af}"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug]
+"UserDebuggerHotKey"=dword:00000000
+"Auto"="0"
+"Debugger"="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\bordbg70.exe -aeargs %ld %ld"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\AutoExclusionList]
+"DWM.exe"=dword:00000001

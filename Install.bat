@@ -50,12 +50,11 @@ cd "%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Borland Delp
 powershell -Command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Delphi7*') { $shortcut.TargetPath = $targetPath -replace 'Delphi7', 'Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Delphi7*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Delphi7', 'Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null"
 
 title Registerying - Delphi 2007
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Borland.reg' -OutFile '%temp%\Borland.reg'"
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Classes.reg' -OutFile '%temp%\Classes.reg'"
-reg import "%temp%\Borland.reg"
-reg import "%temp%\Classes.reg"
-del "%temp%\Borland.reg"
-del "%temp%\Classes.reg"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Borland.reg' -OutFile '%temp%\D7_Borland.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Classes.reg' -OutFile '%temp%\D7_Classes.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Components.reg' -OutFile '%temp%\D7_Components.reg'"
+for %%f in ("%temp%\D7_*.reg") do reg import "%%f" >nul
+del "%temp%\D7_*.reg"
 
 title Updating Path - Delphi 2007
 powershell -Command "$envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); $newPath = ($envPath -split ';' | Where-Object { $_ -notmatch 'Borland\\Delphi7' }) -join ';'; [Environment]::SetEnvironmentVariable('Path', $newPath, 'Machine')"
