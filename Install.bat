@@ -54,7 +54,7 @@ title Registerying - Delphi 2007
 powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Borland.reg' -OutFile '%temp%\D7_Borland.reg'"
 powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Classes.reg' -OutFile '%temp%\D7_Classes.reg'"
 powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Components.reg' -OutFile '%temp%\D7_Components.reg'"
-for %%f in ("%temp%\D7_*.reg") do reg import "%%f" >nul
+for %%f in ("%temp%\D7_*.reg") do reg import "%%f" >nul 2>nul
 del "%temp%\D7_*.reg"
 
 title Updating Path - Delphi 2007
