@@ -22,16 +22,11 @@ Windows Registry Editor Version 5.00
 "Connection Registry File"="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\DBExpress\\dbxconnections.ini"
 "Driver Registry File"="C:\\Program Files (x86)\\Borland\\Delphi 7\\Borland Shared\\DBExpress\\dbxdrivers.ini"
 
-[HKEY_CURRENT_USER\SOFTWARE\Borland\Debugging]
-
-[HKEY_CURRENT_USER\SOFTWARE\Borland\Debugging\7.0]
+[HKEY_CURRENT_USER\SOFTWARE\Borland\Delphi\7.0\Debugging]
+"DontPromptForJITDebugger"="1"
 
 [HKEY_CURRENT_USER\SOFTWARE\Borland\Debugging\7.0\Evaluators]
 "dcc70.dll"="0"
-
-[HKEY_CURRENT_USER\SOFTWARE\Borland\Debugging\7.0\JIT Debuggers]
-
-[HKEY_CURRENT_USER\SOFTWARE\Borland\Delphi]
 
 [HKEY_CURRENT_USER\SOFTWARE\Borland\Delphi\7.0]
 "UseSharedFiles"="TRUE"
