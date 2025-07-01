@@ -1,17 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open\command]
-@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
-
-[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open\command]
-@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
-
-[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open\command]
-@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
-
-[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open\command]
-@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
-
 [HKEY_CLASSES_ROOT\BorlandProjectGroup]
 @="Borland Project Group"
 
@@ -246,3 +234,15 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\AutoExclusionList]
 "DWM.exe"=dword:00000001
+
+[HKEY_CLASSES_ROOT\DelphiProject\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\DelphiCLXForm\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\DelphiPackage\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\DelphiUnit\Shell\Open\command]
+@="C:\\Program Files (x86)\\Borland\\Delphi 7\\Bin\\delphi32.exe \"%1\""
