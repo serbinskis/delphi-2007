@@ -4,22 +4,22 @@ pushd %~dp0
 title Downloading - Delphi 2007
 md "%TEMP%\Delphi2007"
 cd "%TEMP%\Delphi2007"
-powershell -command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.001', 'Delphi2007.7z.001'); break } catch { Start-Sleep -Seconds 1 } }"
-powershell -command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.002', 'Delphi2007.7z.002'); break } catch { Start-Sleep -Seconds 1 } }"
-powershell -command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.003', 'Delphi2007.7z.003'); break } catch { Start-Sleep -Seconds 1 } }"
+powershell -Command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.001', 'Delphi2007.7z.001'); break } catch { Start-Sleep -Seconds 1 } }"
+powershell -Command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.002', 'Delphi2007.7z.002'); break } catch { Start-Sleep -Seconds 1 } }"
+powershell -Command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Archive/Delphi2007.7z.003', 'Delphi2007.7z.003'); break } catch { Start-Sleep -Seconds 1 } }"
 
 title Extracting - Delphi 2007
-powershell -command "Invoke-WebRequest -Uri 'https://www.7-zip.org/a/7za920.zip' -OutFile '7za920.zip'"
-powershell -command "Expand-Archive -Path '7za920.zip' -DestinationPath '.'" -ErrorAction SilentlyContinue"
+powershell -Command "Invoke-WebRequest -Uri 'https://www.7-zip.org/a/7za920.zip' -OutFile '7za920.zip'"
+powershell -Command "Expand-Archive -Path '7za920.zip' -DestinationPath '.'" -ErrorAction SilentlyContinue"
 7za x Delphi2007.7z.001 -aoa >nul
 del /s /q Delphi2007.7z.* >nul
 
 title Patching - Delphi 2007
 md "%USERPROFILE%\.borland"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'ib6.5\SETUP.EXE'"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'Info\Extras\jre1-2-2.exe'"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'Info\Extras\visibroker45\Setup.exe'"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/registry.slm' -OutFile \"$env:USERPROFILE\\.borland\\registry.slm\""
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'ib6.5\SETUP.EXE'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'Info\Extras\jre1-2-2.exe'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/SETUP.EXE' -OutFile 'Info\Extras\visibroker45\Setup.exe'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/registry.slm' -OutFile \"$env:USERPROFILE\\.borland\\registry.slm\""
 
 title Installing - Delphi 2007
 msiexec /i "Install\Borland Delphi 7.msi" /qr PRODUCT_ID=EV8X-73899F-BD3Y8K-ZS8X AUTH_KEY=673-KP8
@@ -33,11 +33,11 @@ compact /C /S:"%SystemDrive%\Program Files (x86)\Borland\Delphi 7" /I /Q >nul
 title Extending - Delphi 2007
 md "%SystemDrive%\Program Files (x86)\Borland\Delphi 7\Addons"
 cd "%SystemDrive%\Program Files (x86)\Borland\Delphi 7\Addons"
-powershell -command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-addons/archive/refs/heads/master.zip', 'Addons.zip'); break } catch { Start-Sleep -Seconds 1 } }"
-powershell -command "Expand-Archive -Path 'Addons.zip' -DestinationPath '.'" -ErrorAction SilentlyContinue"
-powershell -command "Get-ChildItem -Directory | ForEach-Object { Get-ChildItem -Path $_.Name | Move-Item -Destination '.'; Remove-Item -Path $_.Name -Recurse -Force }"
-powershell -command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Bpl.zip', '..\Projects\Bpl.zip'); break } catch { Start-Sleep -Seconds 1 } }"
-powershell -command "Expand-Archive -Path '..\Projects\Bpl.zip' -DestinationPath '..\Projects\' -ErrorAction SilentlyContinue"
+powershell -Command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-addons/archive/refs/heads/master.zip', 'Addons.zip'); break } catch { Start-Sleep -Seconds 1 } }"
+powershell -Command "Expand-Archive -Path 'Addons.zip' -DestinationPath '.'" -ErrorAction SilentlyContinue"
+powershell -Command "Get-ChildItem -Directory | ForEach-Object { Get-ChildItem -Path $_.Name | Move-Item -Destination '.'; Remove-Item -Path $_.Name -Recurse -Force }"
+powershell -Command "while ($true) { try { (New-Object Net.WebClient).DownloadFile('https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Crack/Bpl.zip', '..\Projects\Bpl.zip'); break } catch { Start-Sleep -Seconds 1 } }"
+powershell -Command "Expand-Archive -Path '..\Projects\Bpl.zip' -DestinationPath '..\Projects\' -ErrorAction SilentlyContinue"
 del ..\Projects\Bpl.zip >nul
 del Addons.zip >nul
 
@@ -47,19 +47,19 @@ takeown.exe /F "%dest%" /R /D Y >nul & icacls.exe "%dest%" /grant Everyone:F /T 
 
 title Fixing Shortcuts - Delphi 2007
 cd "%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Borland Delphi 7" & rd /s /q Help >nul
-powershell -command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Delphi7*') { $shortcut.TargetPath = $targetPath -replace 'Delphi7', 'Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Delphi7*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Delphi7', 'Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null" >nul
-powershell -command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Common Files*') { $shortcut.TargetPath = $targetPath -replace 'Common Files', 'Borland\Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Common Files*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Common Files', 'Borland\Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null" >nul
+powershell -Command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Delphi7*') { $shortcut.TargetPath = $targetPath -replace 'Delphi7', 'Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Delphi7*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Delphi7', 'Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null" >nul
+powershell -Command "$shell = New-Object -ComObject WScript.Shell; Get-ChildItem -Path '.' -Recurse -Include *.lnk | ForEach-Object { $shortcut = $shell.CreateShortcut($_.FullName); $targetPath = $shortcut.TargetPath; $workingDirectory = $shortcut.WorkingDirectory; if ($targetPath -like '*Common Files*') { $shortcut.TargetPath = $targetPath -replace 'Common Files', 'Borland\Delphi 7'; $shortcut.Save(); Write-Host 'Updated shortcut: ' $_.FullName }; if ($workingDirectory -like '*Common Files*') { $shortcut.WorkingDirectory = $workingDirectory -replace 'Common Files', 'Borland\Delphi 7'; $shortcut.Save() } }; [Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null" >nul
 
 title Registerying - Delphi 2007
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Borland.reg' -OutFile '%temp%\D7_Borland.reg'"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Classes.reg' -OutFile '%temp%\D7_Classes.reg'"
-powershell -command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Components.reg' -OutFile '%temp%\D7_Components.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Borland.reg' -OutFile '%temp%\D7_Borland.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Classes.reg' -OutFile '%temp%\D7_Classes.reg'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/serbinskis/delphi-2007/raw/refs/heads/master/Registry/Components.reg' -OutFile '%temp%\D7_Components.reg'"
 for %%f in ("%temp%\D7_*.reg") do reg import "%%f" >nul 2>nul
 del "%temp%\D7_*.reg"
 
 title Updating Path - Delphi 2007
-powershell -command "$envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); $newPath = ($envPath -split ';' | Where-Object { $_ -notmatch 'Borland\\Delphi7' }) -join ';'; [Environment]::SetEnvironmentVariable('Path', $newPath, 'Machine')"
+powershell -Command "$envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); $newPath = ($envPath -split ';' | Where-Object { $_ -notmatch 'Borland\\Delphi7' }) -join ';'; [Environment]::SetEnvironmentVariable('Path', $newPath, 'Machine')"
 set "dest=%SystemDrive%\Program Files (x86)\Borland\Delphi 7\bin"
-powershell -command "$path = '%dest%'; $envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); if ($envPath -notlike '*'+$path+'*') { [Environment]::SetEnvironmentVariable('Path', $envPath+';'+$path, 'Machine') }"
+powershell -Command "$path = '%dest%'; $envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); if ($envPath -notlike '*'+$path+'*') { [Environment]::SetEnvironmentVariable('Path', $envPath+';'+$path, 'Machine') }"
 set "dest=%SystemDrive%\Program Files (x86)\Borland\Delphi 7\Projects\Bpl\"
-powershell -command "$path = '%dest%'; $envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); if ($envPath -notlike '*'+$path+'*') { [Environment]::SetEnvironmentVariable('Path', $envPath+';'+$path, 'Machine') }"
+powershell -Command "$path = '%dest%'; $envPath = [Environment]::GetEnvironmentVariable('Path', 'Machine'); if ($envPath -notlike '*'+$path+'*') { [Environment]::SetEnvironmentVariable('Path', $envPath+';'+$path, 'Machine') }"
